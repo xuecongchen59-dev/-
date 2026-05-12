@@ -38,6 +38,13 @@ const lunchOptions = [
     reason: '汤汤水水、清爽热乎，适合想吃得轻松又暖一点的时候。',
     mood: '今天适合喝口热汤，让中午变得柔软一点。',
   },
+  {
+    name: '寿司',
+    emoji: '🍣',
+    tag: '清爽型',
+    reason: '清爽、不重口，适合想吃轻一点但又有点仪式感的午餐。',
+    mood: '今天适合吃得轻盈一点，让下午也保持清清爽爽。',
+  },
 ];
 
 const rollDelays = [70, 80, 90, 105, 125, 150, 180, 220, 270, 330];
@@ -205,7 +212,7 @@ export default function App() {
           </header>
 
           <motion.div
-            className="mt-6 grid grid-cols-2 gap-3 md:grid-cols-5"
+            className="mt-6 grid grid-cols-2 gap-3 md:grid-cols-3 lg:grid-cols-6"
             animate={phase === 'starting' ? { scale: [1, 1.015, 1], y: [0, -2, 0] } : {}}
             transition={{ duration: 0.22, ease: 'easeOut' }}
           >
